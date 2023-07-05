@@ -135,10 +135,10 @@ private:
 ///@brief Interface manager class, encapsulating the interface logic
 class iface {
 public:
-	iface(unsigned port=11111);
+	iface(unsigned port=20000);
 
 	/// @brief Set up socket
-	void init(unsigned port=11111);
+	void init(unsigned port=20000);
 	/// @brief Run request-response loop
 	void run_stream(); // main
 	/// @brief Unpack and act on each received packet, calling
